@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95e66c6366d904e98bc83428217d4fd7, type: 3}
+  m_Name: rotator
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"Kind":"Flow","collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":"Rotate
+      Turntable","summary":"spins object around y-axis on update","pan":{"x":182.6667,"y":245.0},"zoom":1.0,"elements":[{"coroutine":false,"defaultValues":{},"position":{"x":-204.0,"y":60.0},"guid":"3422b21e-35bc-4b92-b494-05049490331d","$version":"A","$type":"Unity.VisualScripting.Update","$id":"9"},{"chainable":false,"parameterNames":["xAngle","yAngle","zAngle","relativeTo"],"member":{"name":"Rotate","parameterTypes":["System.Single","System.Single","System.Single","UnityEngine.Space"],"targetType":"UnityEngine.Transform","targetTypeName":"UnityEngine.Transform","$version":"A"},"defaultValues":{"target":null,"%xAngle":{"$content":0.0,"$type":"System.Single"},"%yAngle":{"$content":3.0,"$type":"System.Single"},"%zAngle":{"$content":0.0,"$type":"System.Single"},"%relativeTo":{"$content":"World","$type":"UnityEngine.Space"}},"position":{"x":111.0,"y":64.0},"guid":"8c04909f-58cc-463f-baa1-6b5ccd56067b","$version":"A","$type":"Unity.VisualScripting.InvokeMember","$id":"11"},{"member":{"name":"deltaTime","parameterTypes":null,"targetType":"UnityEngine.Time","targetTypeName":"UnityEngine.Time","$version":"A"},"defaultValues":{},"position":{"x":-220.0,"y":169.0},"guid":"2f2d066f-343a-48de-a1ca-83d0269cd51c","$version":"A","$type":"Unity.VisualScripting.GetMember","$id":"15"},{"defaultValues":{"b":{"$content":30.0,"$type":"System.Single"}},"position":{"x":-42.0,"y":292.0},"guid":"8f924d2e-13ca-4d95-b5c0-c8e51a5c9fde","$version":"A","$type":"Unity.VisualScripting.ScalarMultiply","$id":"18"},{"sourceUnit":{"$ref":"9"},"sourceKey":"trigger","destinationUnit":{"$ref":"11"},"destinationKey":"enter","guid":"23e39c9c-eaff-4b2d-ad00-620c66a3b81c","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"15"},"sourceKey":"value","destinationUnit":{"$ref":"18"},"destinationKey":"a","guid":"d44c5494-e50b-490b-afc8-5a90cb983623","$type":"Unity.VisualScripting.ValueConnection"},{"sourceUnit":{"$ref":"18"},"sourceKey":"product","destinationUnit":{"$ref":"11"},"destinationKey":"%yAngle","guid":"7c99a45b-b040-4fa0-ad13-d7fb9c1b6da8","$type":"Unity.VisualScripting.ValueConnection"}],"$version":"A"}}'
+    _objectReferences: []
